@@ -182,7 +182,7 @@
                 <h2>{% trans "Tracking your order" %}</h2>
             </div>
             <p>{% trans "You can track the status of your order" %}</p>
-            <a class="btn btn-primary" href="{% url 'customer:anon-order' order_number=order.number hash=order.verification_hash %}">{% trans "View order status" %}</a>.
+            <a class="btn btn-info" href="{% url 'customer:anon-order' order_number=order.number hash=order.verification_hash %}">{% trans "View order status" %}</a>.
         {% endif %}
     {% endblock %}
 
@@ -194,7 +194,7 @@
                     <p><a onclick="window.print()" href="#" class="btn btn-primary btn-block btn-lg">{% trans "Print this page" %}</a></p>
                 </div>
                 <div class="col-sm-4 col-sm-offset-4">
-                    <p><a href="{{ homepage_url }}" class="btn btn-primary btn-block btn-lg">{% trans "Continue shopping" %}</a></p>
+                    <p><a href="{{ homepage_url }}" class="btn btn-success btn-block btn-lg">{% trans "Continue shopping" %}</a></p>
                 </div>
             </div>
         </div>
